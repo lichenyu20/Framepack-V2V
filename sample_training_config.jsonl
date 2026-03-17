@@ -1,0 +1,2 @@
+{"video":"./training_samples/1.mp4","prompt":"A Newton’s cradle on a white background. The leftmost steel ball is initially displaced to the left and released, transferring momentum through the stationary ball chain and causing the rightmost ball to swing outward."}
+{"video":"./training_samples/2.mp4","prompt":"A simple pendulum oscillation on a uniform white background. The motion starts with the pendulum bob displaced to the left of the equilibrium position and released, then it swings rightward and continues periodic motion."}

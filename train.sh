@@ -1,0 +1,18 @@
+accelerate launch training_v2v.py \
+  --dataset_jsonl sample_training_config.jsonl \
+  --output_dir ~/training_outputs_v2v \
+  --resolution 640 \
+  --latent_window_size 9 \
+  --train_future_sections 2 \
+  --num_clean_frames 5 \
+  --batch_size 1 \
+  --grad_accum 1 \
+  --lr 1e-5 \
+  --max_steps 10000 \
+  --save_every 20 \
+  --use_lora \
+  --lora_rank 16 \
+  --lora_alpha 16 \
+  --gradient_checkpointing \
+  --mixed_precision bf16 \
+  --use_image_conditioning

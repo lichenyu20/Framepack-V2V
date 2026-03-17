@@ -1,0 +1,17 @@
+python inference_v2v.py \
+  --video ./prefix.mp4 \
+  --prompt "A simple pendulum oscillation on a uniform white background. The motion starts with the pendulum bob displaced to the left of the equilibrium position and released, then it swings rightward and continues periodic motion." \
+  --negative_prompt "blurry, distorted, static, low quality" \
+  --seed 31337 \
+  --total_second_length 5 \
+  --latent_window_size 9 \
+  --steps 25 \
+  --cfg 1.0 \
+  --gs 3.0 \
+  --rs 0.0 \
+  --gpu_memory_preservation 6 \
+  --mp4_crf 16 \
+  --resolution 640 \
+  --vae_batch 16 \
+  --num_clean_frames 5 \
+  --output_dir ./test_output
